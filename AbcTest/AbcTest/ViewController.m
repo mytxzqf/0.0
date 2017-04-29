@@ -31,6 +31,7 @@
     [self.view addSubview:self.table];
     [self.table registerClass:[TableViewCell class] forCellReuseIdentifier:ReuseID];
     self.table.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.table.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

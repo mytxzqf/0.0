@@ -14,9 +14,11 @@
 		0F4A18EC1EADCE9500DFFCCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F4A18EB1EADCE9500DFFCCB /* Assets.xcassets */; };
 		0F4A18EF1EADCE9500DFFCCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F4A18ED1EADCE9500DFFCCB /* LaunchScreen.storyboard */; };
 		0F4A18F81EADDAD700DFFCCB /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4A18F71EADDAD700DFFCCB /* TableViewCell.m */; };
+		FB5C20EA39C35D10553004D4 /* libPods-AbcTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9087D32854CB8450876345 /* libPods-AbcTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07F962DC2E28C2A29B2F3852 /* Pods-AbcTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AbcTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AbcTest/Pods-AbcTest.debug.xcconfig"; sourceTree = "<group>"; };
 		0F4A18DC1EADCE9500DFFCCB /* AbcTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AbcTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F4A18E01EADCE9500DFFCCB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0F4A18E21EADCE9500DFFCCB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -29,6 +31,8 @@
 		0F4A18F01EADCE9500DFFCCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F4A18F61EADDAD700DFFCCB /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		0F4A18F71EADDAD700DFFCCB /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		1E9087D32854CB8450876345 /* libPods-AbcTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AbcTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E2D752F44932820152EBBD5 /* Pods-AbcTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AbcTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-AbcTest/Pods-AbcTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB5C20EA39C35D10553004D4 /* libPods-AbcTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +52,8 @@
 			children = (
 				0F4A18DE1EADCE9500DFFCCB /* AbcTest */,
 				0F4A18DD1EADCE9500DFFCCB /* Products */,
+				DA2824307B594EF5B2BA8268 /* Pods */,
+				4639F04C9A0C6ECCFD4F1DB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +91,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4639F04C9A0C6ECCFD4F1DB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E9087D32854CB8450876345 /* libPods-AbcTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA2824307B594EF5B2BA8268 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07F962DC2E28C2A29B2F3852 /* Pods-AbcTest.debug.xcconfig */,
+				6E2D752F44932820152EBBD5 /* Pods-AbcTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F4A18F31EADCE9500DFFCCB /* Build configuration list for PBXNativeTarget "AbcTest" */;
 			buildPhases = (
+				D7BED59070F7051117CA9147 /* [CP] Check Pods Manifest.lock */,
 				0F4A18D81EADCE9500DFFCCB /* Sources */,
 				0F4A18D91EADCE9500DFFCCB /* Frameworks */,
 				0F4A18DA1EADCE9500DFFCCB /* Resources */,
+				FBB8CD304927A5334CF81D03 /* [CP] Embed Pods Frameworks */,
+				6D347BE8984216A83AE25658 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +176,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D347BE8984216A83AE25658 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AbcTest/Pods-AbcTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7BED59070F7051117CA9147 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FBB8CD304927A5334CF81D03 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AbcTest/Pods-AbcTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0F4A18D81EADCE9500DFFCCB /* Sources */ = {
@@ -274,6 +349,7 @@
 		};
 		0F4A18F41EADCE9500DFFCCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07F962DC2E28C2A29B2F3852 /* Pods-AbcTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AbcTest/Info.plist;
@@ -285,6 +361,7 @@
 		};
 		0F4A18F51EADCE9500DFFCCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E2D752F44932820152EBBD5 /* Pods-AbcTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AbcTest/Info.plist;
